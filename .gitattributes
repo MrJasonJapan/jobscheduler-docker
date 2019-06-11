@@ -1,0 +1,8 @@
+# When using on Docker for Windows, temporarily delete startup_scheduler.sh、and then checkout again as follows:
+# git checkout origin/master startup_scheduler.sh 
+# or
+# git checkout startup_scheduler.sh
+
+# Set line endings to LF, even on Windows. Otherwise, execution within Docker fails.
+# See https://help.github.com/articles/dealing-with-line-endings/
+*.sh text eol=lf
