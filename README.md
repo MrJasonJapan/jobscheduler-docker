@@ -69,7 +69,7 @@ docker-compose down -v
 
 http://localhost:4446 (root / root)
 
-# How to View Test Job Chaing with Test Job
+# How to View Test Job Chain with Test Job
 
 After loggin in, navigate to the "Job Chains" tab, then click on the "test" folder in the left pane.
 Click on "job_chain1" to view the job chain details. You should see "job01" in the job chain flow representation.
