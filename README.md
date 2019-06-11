@@ -10,8 +10,6 @@ The js_agent container has also been added.
 - Ports:
   - 4446 (Webinterface, username/password: root/root)
   - 40444 (Agents)
-- you can either use mysql or mariadb
-- mysql environment will be used in startup script
 
 # Docker Compose
 
@@ -51,26 +49,25 @@ js_agent:
 
 # Usage
 
-### Install with "build: ."
+### Install with "build: ." (line 2 of docker-compose.yml file)
 
 docker-compose up --build
 
-### Install with "image: spagettys/jobscheduler-docker:latest"
+### Install with "image: spagettys/jobscheduler-docker:latest" (line 3 of docker-compose.yml file)
 
 docker-compose up
 
-### Uninstall JobScheduler
+### Uninstall
 
 docker-compose down
 
-### Uninstall JobScheduler with volumes (should fix issue where you can't login with root)
+### Uninstall including volumes (should fix issue where you can't login with root)
 
 docker-compose down -v
 
 # Login
 
-http://localhost:4446
-root / root
+http://localhost:4446 (root / root)
 
 # How to View Test Job Chaing with Test Job
 
