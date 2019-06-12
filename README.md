@@ -49,11 +49,11 @@ js_agent:
 
 # Usage
 
-### Install with "build: ." (line 2 of docker-compose.yml file)
+### Install with "build: ." (line 2 and 29 of docker-compose.yml file)
 
 docker-compose up --build
 
-### Install with "image: spagettys/jobscheduler-docker:latest" (line 3 of docker-compose.yml file)
+### Install with "image: spagettys/..." (line 3 and 30 of docker-compose.yml file)
 
 docker-compose up
 
@@ -69,11 +69,7 @@ docker-compose down -v
 
 http://localhost:4446 (root / root)
 
-# How to View Test Job Chain with Test Job
+# View Test Job Chain with Test Job
 
-After loggin in, navigate to the "Job Chains" tab, then click on the "test" folder in the left pane.
+After logging in, navigate to the "Job Chains" tab, then click on the "test" folder in the left pane.
 Click on "job_chain1" to view the job chain details. You should see "job01" in the job chain flow representation.
-
-# How to use the Job Agent
-
-comming soon... hopefully...
