@@ -17,8 +17,8 @@ docker-compose.yml
 
 ```
 jobscheduler:
-  build: .
-  # image: spagettys/jobscheduler-docker:latest
+  # build: .
+  image: spagettys/jobscheduler:latest
   links:
     - db:mysql
   volumes_from:
@@ -44,7 +44,8 @@ datastore:
     - ./live:/opt/jobscheduler/data/scheduler/config/live
 
 js_agent:
-  image: js_agent
+  # build: client/.
+  image: spagettys/jobscheduler-agent:latest
 ```
 
 # Usage
